@@ -6,9 +6,10 @@ Route::get('/greet', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('home');
-});
+
+Route::get("/", [ChirpController::class, "index"]);
+
+
 Route::get('/working', function () {
     return view('gonna_try');
 });
