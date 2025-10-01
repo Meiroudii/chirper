@@ -12,3 +12,8 @@ Route::get('/', function () {
 Route::get('/working', function () {
     return view('gonna_try');
 });
+
+Route::get("/fake-admin", function () {
+    return view("fake_admin");
+});
+
